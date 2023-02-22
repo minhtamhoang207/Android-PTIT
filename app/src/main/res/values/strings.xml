@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PTIIT</string>
+    <string-array name="math">
+        <item>+</item>
+        <item>-</item>
+        <item>x</item>
+        <item>:</item>
+    </string-array>
 </resources>
