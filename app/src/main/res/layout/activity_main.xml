@@ -195,6 +195,17 @@
 
     </HorizontalScrollView>
 
+    <AutoCompleteTextView
+        android:id="@+id/autoComplete1"
+        android:layout_width="match_parent"
+        android:hint="enter something"
+        android:layout_height="wrap_content" />
+
+    <TimePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>
 
