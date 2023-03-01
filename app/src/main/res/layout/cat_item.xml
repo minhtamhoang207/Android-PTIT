@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -18,13 +19,13 @@
             android:layout_margin="10dp"
             android:orientation="horizontal">
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <ImageView
                 android:id="@+id/cat_card_img"
                 android:layout_width="107dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="20dp"
                 android:src="@drawable/trada"
-                app:civ_border_width="1dp" />
+                app:civ_border_width="1dp"/>
 
             <LinearLayout
                 android:layout_width="160dp"
@@ -59,15 +60,11 @@
 
             </LinearLayout>
 
-            <Button
+            <ImageButton
                 android:id="@+id/buttonDeleteCat"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:textColor="@color/white"
-                android:background="@color/red"
-                android:textSize="10dp"
-                android:text="Delete" />
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_baseline_delete_24"/>
 
         </LinearLayout>
 

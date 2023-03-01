@@ -40,6 +40,8 @@
             android:ems="10"
             android:inputType="text"
             android:hint="Enter name"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/spinner_cat" />
@@ -52,8 +54,11 @@
             android:ems="10"
             android:inputType="numberDecimal"
             android:hint="Enter price"
+            android:layout_marginTop="18dp"
+            android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/rounded_edt"
             app:layout_constraintTop_toBottomOf="@+id/editTextCatName" />
 
         <EditText
@@ -63,9 +68,12 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
+            android:layout_marginTop="18dp"
             android:hint="Enter describe"
+            android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/rounded_edt"
             app:layout_constraintTop_toBottomOf="@+id/editTextCatPrice" />
 
         <Button
@@ -74,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="44dp"
             android:text="Update"
-            android:background="@color/design_default_color_primary_dark"
+            android:background="@drawable/gradient"
             android:textColor="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/buttonAddCat"
             app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +95,7 @@
             android:layout_marginTop="44dp"
             android:layout_marginEnd="68dp"
             android:text="Add"
-            android:background="@color/teal_200"
+            android:background="@color/green"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextCatDescribe" />
 

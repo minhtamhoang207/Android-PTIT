@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="6dp"
+        android:elevation="3dp"
         android:focusable="true">
 
         <LinearLayout
@@ -35,22 +36,29 @@
                     android:id="@+id/title_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
                     android:text="Title"
                     android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/sub_title_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="sub_title"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/content_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:text="Content"
-                    android:textSize="20sp" />
-
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

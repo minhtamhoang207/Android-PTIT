@@ -5,20 +5,13 @@ public class Model1 {
     String content;
     int image;
     String title;
+    String subTitle;
 
-    public Model1(String title, String content, int image) {
-        this.title = title;
+    public Model1(String content, String title, int image, String subTitle) {
         this.content = content;
         this.image = image;
-    }
-
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
         this.title = title;
+        this.subTitle = subTitle;
     }
 
     public String getContent() {
@@ -35,5 +28,21 @@ public class Model1 {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getSubTitle() {
+        return subTitle;
+    }
+
+    public void setSubTitle(String subTitle) {
+        this.subTitle = subTitle;
     }
 }

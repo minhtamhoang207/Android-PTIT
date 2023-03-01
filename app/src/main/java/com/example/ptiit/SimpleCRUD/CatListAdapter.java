@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,7 +27,7 @@ public class CatListAdapter extends RecyclerView.Adapter<CatListAdapter.MyViewHo
         CardView cardItem;
         TextView name, price, description;
         ImageView catImage;
-        Button buttonDeleteCat;
+        ImageButton buttonDeleteCat;
 
         public MyViewHolder(View itemView) {
             super(itemView);
