@@ -26,10 +26,10 @@ public class RecycleViewAdapterActivity extends AppCompatActivity {
 
         ArrayList<Model1> courseModelArrayList = new ArrayList<Model1>();
         courseModelArrayList.add(new Model1("Android", "Content 1", R.drawable.trada, "Subtitle 1"));
-        courseModelArrayList.add(new Model1("IOS", "Content 2", R.drawable.img_test, "Subtitle 2"));
-        courseModelArrayList.add(new Model1("Black berry", "Content 3", R.drawable.trada, "Subtitle 3"));
-        courseModelArrayList.add(new Model1("Window", "Content 4", R.drawable.img_test, "Subtitle 4"));
-        courseModelArrayList.add(new Model1("ABC xyz", "Content 5", R.drawable.trada, "Subtitle 5"));
+        courseModelArrayList.add(new Model1("IOS", "Content 2", R.drawable.meo_tam_the, "Subtitle 2"));
+        courseModelArrayList.add(new Model1("Black berry", "Content 3", R.drawable.meo_muop, "Subtitle 3"));
+        courseModelArrayList.add(new Model1("Window", "Content 4", R.drawable.meo_ba_tu, "Subtitle 4"));
+        courseModelArrayList.add(new Model1("ABC xyz", "Content 5", R.drawable.sphynx, "Subtitle 5"));
         courseModelArrayList.add(new Model1("hsjadhaksj", "Content 6", R.drawable.img_test, "Subtitle 6"));
 
         Adapter1 courseAdapter = new Adapter1(courseModelArrayList);
