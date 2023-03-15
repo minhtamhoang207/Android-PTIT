@@ -62,7 +62,11 @@ public class SimpleCrudActivity extends AppCompatActivity implements AdapterView
                 cat.setType(spinnerCatType);
                 cat.setImage(spinnerCatImage);
                 fakeId++;
-                catListAdapter.addCat(cat);
+                if(catName.isEmpty() || catPrice == 0 || catDescribe.isEmpty()){
+                    Toast.makeText(this,"vui lòng nhập đủ thông tin", Toast.LENGTH_SHORT).show();
+                } else {
+                    catListAdapter.addCat(cat);
+                }
             } catch (Exception e){
                 Toast.makeText(this,e.toString(), Toast.LENGTH_SHORT).show();
             }
