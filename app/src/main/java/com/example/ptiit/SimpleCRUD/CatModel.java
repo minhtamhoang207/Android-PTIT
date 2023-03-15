@@ -1,6 +1,7 @@
 package com.example.ptiit.SimpleCRUD;
 
 public class CatModel {
+    int id;
     String name;
     String description;
     double price;
@@ -9,12 +10,25 @@ public class CatModel {
 
     public CatModel(){}
 
-    public CatModel(String name, String description, double price, int image, String type) {
+    public CatModel(int id, String name, String description, double price, int image, String type) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.image = image;
         this.type = type;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public String getName() {

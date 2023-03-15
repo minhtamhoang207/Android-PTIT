@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -22,12 +23,14 @@ public class SimpleCrudActivity extends AppCompatActivity implements AdapterView
     Spinner spinner;
     String[] catType = {"Meo tam the","Meo muop","Meo tai cup","Meo sphynx"};
     int catImages[] = {R.drawable.meo_tam_the, R.drawable.meo_muop, R.drawable.tai_cup, R.drawable.sphynx};
-    EditText edtCatName, edtCatPrice, edtDescribe;
+    EditText edtCatName, edtCatPrice, edtDescribe, edtSearch;
     Button btnAdd, btnUpdate;
     RecyclerView recyclerView;
     String spinnerCatType = "";
     CatListAdapter catListAdapter;
     int spinnerCatImage;
+    ImageView buttonSearch;
+    int fakeId = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,17 +55,42 @@ public class SimpleCrudActivity extends AppCompatActivity implements AdapterView
                 double catPrice = Double.parseDouble(edtCatPrice.getText().toString());
                 String catDescribe = edtDescribe.getText().toString();
                 CatModel cat = new CatModel();
+                cat.setId(fakeId);
                 cat.setName(catName);
                 cat.setPrice(catPrice);
                 cat.setDescription(catDescribe);
                 cat.setType(spinnerCatType);
                 cat.setImage(spinnerCatImage);
-
+                fakeId++;
                 catListAdapter.addCat(cat);
             } catch (Exception e){
                 Toast.makeText(this,e.toString(), Toast.LENGTH_SHORT).show();
             }
         });
+
+        buttonSearch.setOnClickListener(view -> {
+            try  {
+                String keyword = edtSearch.getText().toString();
+                catListAdapter.searchCat(keyword);
+            } catch (Exception e){
+                Toast.makeText(this,e.toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnUpdate.setOnClickListener(view -> {
+            String catName = edtCatName.getText().toString();
+            double catPrice = Double.parseDouble(edtCatPrice.getText().toString());
+            String catDescribe = edtDescribe.getText().toString();
+            CatModel cat = new CatModel();
+            cat.setId(fakeId);
+            cat.setName(catName);
+            cat.setPrice(catPrice);
+            cat.setDescription(catDescribe);
+            cat.setType(spinnerCatType);
+            cat.setImage(spinnerCatImage);
+            catListAdapter.updateCat(cat);
+        });
+
     }
 
     void initView(){
@@ -73,6 +101,8 @@ public class SimpleCrudActivity extends AppCompatActivity implements AdapterView
         btnAdd = findViewById(R.id.buttonAddCat);
         btnUpdate = findViewById(R.id.buttonUpdateCat);
         recyclerView = findViewById(R.id.cat_recycle_view);
+        edtSearch = findViewById(R.id.edtSearch);
+        buttonSearch = findViewById(R.id.iconSearch);
     }
 
     @Override

@@ -1,11 +1,14 @@
 package com.example.ptiit.SimpleCRUD;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,13 +24,16 @@ import java.util.List;
 public class CatListAdapter extends RecyclerView.Adapter<CatListAdapter.MyViewHolder> {
 
     private List<CatModel> dataSet;
+    int currentCat;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 
         CardView cardItem;
         TextView name, price, description;
         ImageView catImage;
-        ImageButton buttonDeleteCat;
+        ImageButton buttonDeleteCat, btnUpdateCat;
+        EditText edtCatName, edtCatPrice, edtDescribe;
+        Spinner spinner;
 
         public MyViewHolder(View itemView) {
             super(itemView);
@@ -37,6 +43,12 @@ public class CatListAdapter extends RecyclerView.Adapter<CatListAdapter.MyViewHo
             this.description = (TextView) itemView.findViewById(R.id.cat_describe_item);
             this.catImage = (ImageView) itemView.findViewById(R.id.cat_card_img);
             this.buttonDeleteCat = itemView.findViewById(R.id.buttonDeleteCat);
+            this.btnUpdateCat = itemView.findViewById(R.id.btnUpdateCat);
+
+            this.spinner = itemView.findViewById(R.id.spinner_cat);
+            this.edtCatName = itemView.findViewById(R.id.editTextCatName);
+            this.edtCatPrice = itemView.findViewById(R.id.editTextCatPrice);
+            this.edtDescribe = itemView.findViewById(R.id.editTextCatDescribe);
         }
     }
 
@@ -61,8 +73,12 @@ public class CatListAdapter extends RecyclerView.Adapter<CatListAdapter.MyViewHo
 
         holder.cardItem.setOnClickListener(view -> {
             Toast.makeText(holder.cardItem.getContext(),
-                    dataSet.get(index).getName() + " " + dataSet.get(index).getDescription(),
+                    "updating :" + dataSet.get(index).getName(),
                     Toast.LENGTH_SHORT).show();
+        });
+
+        holder.btnUpdateCat.setOnClickListener(view -> {
+            int currentCat = index;
         });
 
         holder.buttonDeleteCat.setOnClickListener(view -> {
@@ -79,6 +95,22 @@ public class CatListAdapter extends RecyclerView.Adapter<CatListAdapter.MyViewHo
 
     void addCat(CatModel cat){
         dataSet.add(cat);
+        notifyDataSetChanged();
+    }
+
+    void searchCat(String catName){
+        List<CatModel> newCat = new ArrayList<>();
+        for(CatModel element : dataSet){
+            if(element.name.toLowerCase().contains(catName.toLowerCase())){
+                newCat.add(element);
+            }
+        }
+        dataSet = newCat;
+        notifyDataSetChanged();
+    }
+
+    void updateCat(CatModel cat){
+        dataSet.set(currentCat, cat);
         notifyDataSetChanged();
     }
 }
