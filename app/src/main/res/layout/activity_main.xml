@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_test">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Olivia"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_test">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Olivia"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_test">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Olivia"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_test">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Olivia"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_test">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Olivia"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_test">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Olivia"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoComplete1"
+        android:layout_width="match_parent"
+        android:hint="enter something"
+        android:layout_height="wrap_content" />
+
+    <TimePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@color/material_dynamic_neutral90"-->
+    <!--    tools:context=".MainActivity">-->
+
+
+    <!--    &lt;!&ndash;        <androidx.fragment.app.FragmentContainerView&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:id="@+id/nav_host_fragment"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:name="androidx.navigation.fragment.NavHostFragment"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_height="0dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:layout_constraintLeft_toLeftOf="parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:layout_constraintRight_toRightOf="parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;            app:defaultNavHost="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            app:navGraph="@navigation/navigation" />&ndash;&gt;-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView5"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:text="TraDa"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView3"-->
+    <!--        android:layout_width="164dp"-->
+    <!--        android:layout_height="74dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView5"-->
+    <!--        app:srcCompat="@drawable/ic_baseline_cruelty_free_24" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextTextEmailAddress"-->
+    <!--        android:layout_width="338dp"-->
+    <!--        android:layout_height="47dp"-->
+    <!--        android:layout_marginTop="68dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="Nhập email"-->
+    <!--        android:inputType="textEmailAddress"-->
+    <!--        android:background="@drawable/rounded_edt"-->
+    <!--        android:paddingLeft="20dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView3" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextTextPassword"-->
+    <!--        android:layout_width="335dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPassword"-->
+    <!--        android:hint="Nhập password"-->
+    <!--        android:background="@drawable/rounded_edt"-->
+    <!--        android:paddingLeft="20dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView6"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:text="Quên mật khẩu"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.892"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button4"-->
+    <!--        android:layout_width="179dp"-->
+    <!--        android:layout_height="42dp"-->
+    <!--        android:layout_marginTop="40dp"-->
+    <!--        android:text="Đăng nhập"-->
+    <!--        android:background="@drawable/gradient"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView6" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView7"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:text="Lựa chọn khác"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/button4" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView5"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/imageView6"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView4"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline4"-->
+    <!--        android:src="@drawable/ic_baseline_home_24" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/imageView5"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintHorizontal_chainStyle="spread"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline4"-->
+    <!--        app:srcCompat="@android:drawable/ic_menu_share" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView6"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView5"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline4"-->
+    <!--        android:src="@drawable/ic_baseline_info_24"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView8"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Tạo tài khoản"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.501"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/imageView5"-->
+    <!--        app:layout_constraintVertical_bias="0.853" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_begin="618dp" />-->
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
