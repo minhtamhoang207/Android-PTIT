@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/blue">
+    android:gravity="center"
+    android:background="@color/teal_200">
 
-    <ImageView
-        android:id="@+id/img3"
-        android:src="@drawable/meo_tam_the"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
+    <com.google.android.material.tabs.TabLayout
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:tabSelectedTextColor="@color/blue"
+        app:tabInlineLabel="true"
+        app:tabIconTint="@color/teal_200">
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Movie"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+    </com.google.android.material.tabs.TabLayout>
 
-    <TextView
-        android:id="@+id/description3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Xem phim cung Netflix"
-        android:textColor="#ffffff" />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/tab_layout"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-</LinearLayout>
+</RelativeLayout>

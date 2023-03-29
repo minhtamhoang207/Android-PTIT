@@ -6,12 +6,14 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.tabs.TabLayout
-        android:background="@color/teal_200"
+        android:background="@color/white"
         android:layout_alignParentTop="true"
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        app:tabSelectedTextColor="@color/red">
+        app:tabSelectedTextColor="@color/blue"
+        app:tabInlineLabel="true"
+        app:tabIconTint="@color/teal_200">
 
     </com.google.android.material.tabs.TabLayout>
 
@@ -19,5 +21,5 @@
         android:layout_below="@id/tab_layout"
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
 </RelativeLayout>
