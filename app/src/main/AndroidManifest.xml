@@ -13,6 +13,45 @@
         android:theme="@style/Theme.PTIIT"
         tools:targetApi="31">
         <activity
+            android:name=".view_pager.ViewPagerActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".fragment_1.DynamicFragmentActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".fragment_1.FragmentExampleActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
             android:name=".UpdateCatActivity"
             android:exported="false">
             <meta-data
@@ -34,20 +73,21 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".SimpleCRUD.SimpleCrudActivity"
+            android:name=".simple_crud.SimpleCrudActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".RecycleViewExample.RecycleViewAdapterActivity"
+            android:name=".recycle_view_example.RecycleViewAdapterActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

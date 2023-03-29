@@ -1,4 +1,4 @@
-package com.example.ptiit.SimpleCRUD;
+package com.example.ptiit.simple_crud;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,8 +14,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.ptiit.R;
-
-import java.util.ArrayList;
 
 public class SimpleCrudActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 

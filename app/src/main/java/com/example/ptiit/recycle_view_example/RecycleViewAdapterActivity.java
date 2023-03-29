@@ -1,13 +1,10 @@
-package com.example.ptiit.RecycleViewExample;
+package com.example.ptiit.recycle_view_example;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.view.Display;
-import android.view.View;
 
 import com.example.ptiit.R;
 

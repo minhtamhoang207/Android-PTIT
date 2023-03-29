@@ -1,10 +1,8 @@
-package com.example.ptiit.SimpleCRUD;
+package com.example.ptiit.simple_crud;
 
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -16,7 +14,6 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ptiit.R;
-import com.example.ptiit.SimpleCRUD.CatModel;
 
 import java.util.ArrayList;
 import java.util.List;

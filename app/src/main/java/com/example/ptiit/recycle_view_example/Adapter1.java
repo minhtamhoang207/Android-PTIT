@@ -1,4 +1,4 @@
-package com.example.ptiit.RecycleViewExample;
+package com.example.ptiit.recycle_view_example;
 
 import android.view.LayoutInflater;
 import android.view.View;

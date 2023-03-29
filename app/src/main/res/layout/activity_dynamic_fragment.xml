@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment_1.DynamicFragmentActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bta"
+            app:layout_constraintTop_toBottomOf="@id/tv"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="wrap_content"
+            android:text="Add A" />
+
+
+        <Button
+            android:id="@+id/btb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Add B"
+            app:layout_constraintLeft_toRightOf="@id/bta"
+            app:layout_constraintTop_toBottomOf="@id/tv" />
+
+        <Button
+            android:id="@+id/btc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Add C"
+            app:layout_constraintLeft_toRightOf="@id/bta"
+            app:layout_constraintTop_toBottomOf="@id/tv" />
+
+        <Button
+            android:id="@+id/btback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Back"
+            app:layout_constraintLeft_toRightOf="@id/bta"
+            app:layout_constraintTop_toBottomOf="@id/tv" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_rma"
+            app:layout_constraintTop_toBottomOf="@id/tv"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="wrap_content"
+            android:text="Rm A" />
+
+
+        <Button
+            android:id="@+id/btn_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Rm B"
+            app:layout_constraintLeft_toRightOf="@id/bta"
+            app:layout_constraintTop_toBottomOf="@id/tv" />
+
+        <Button
+            android:id="@+id/btn_rmc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Rm C"
+            app:layout_constraintLeft_toRightOf="@id/bta"
+            app:layout_constraintTop_toBottomOf="@id/tv" />
+
+        <Button
+            android:id="@+id/btn_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Pop"
+            app:layout_constraintLeft_toRightOf="@id/bta"
+            app:layout_constraintTop_toBottomOf="@id/tv" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

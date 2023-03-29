@@ -1,4 +1,4 @@
-package com.example.ptiit.SimpleCRUD;
+package com.example.ptiit.simple_crud;
 
 public class CatModel {
     int id;

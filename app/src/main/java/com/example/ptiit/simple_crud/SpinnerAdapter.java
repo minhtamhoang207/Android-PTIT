@@ -1,18 +1,11 @@
-package com.example.ptiit.SimpleCRUD;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+package com.example.ptiit.simple_crud;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.example.ptiit.R;
