@@ -35,7 +35,8 @@ public class ViewPagerActivity extends AppCompatActivity {
         PagerAdapter adapter = new ViewPagerAdapter(manager);
         pager.setAdapter(adapter);
         tabLayout.setupWithViewPager(pager);
-        pager.setPageTransformer(true, new HorizontalFlipTransformation());        pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        pager.setPageTransformer(true, new HorizontalFlipTransformation());
+        pager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setTabsFromPagerAdapter(adapter);//deprecated
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_fastfood_24);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_mode_of_travel_24);
